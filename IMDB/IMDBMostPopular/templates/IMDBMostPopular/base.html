@@ -1,0 +1,37 @@
+﻿{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load staticfiles%}
+{{block.super}}
+<head> 
+<meta charset="utf-8">
+<link rel='icon' href={% static 'favicon.ico' %}>
+<link rel="stylesheet" href={% static  'css/bootstrap.min.css'%}>
+<link rel="stylesheet" href={%static 'css/bootstrap-theme.min.css'%}>
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+<title>{% block title %} IMDB Most Popular {% endblock %}</title>
+</head>
+<body>
+
+
+{% block navbar %}
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href={% url 'index'%}>IMDB Most Popular Movies</a>
+                </div>
+                
+            </div>
+        </nav>
+
+{% endblock %}
+<div class="container">
+<div class="header clearfix">
+<div>
+
+
+{%block content%}
+{% endblock %}
+</div>
+</div>
+</body>

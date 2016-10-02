@@ -1,0 +1,27 @@
+{% extends 'IMDBMostPopular/base.html'%}
+{%block title%} Movie Details {% endblock %}
+{% block content %}
+<div class="container page-header hpad">
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8 body">
+			
+				<img src='{{movie.movie_image}}' align="left" style=" left: 15px;padding-bottom:10px ;padding-top:30px;">
+				<h1>{{movie.movie_title}} ({{movie.movie_year}})</h1>
+<p><b>Movie Rating: </b>{{movie.movie_rating}} </p>
+<p><b>Total user reviews: </b>{{movie.movie_rating_count}}</p>
+<span class="btn btn-info"><a href='{{movie.movie_link}}' style="color:white;"> See on IMDB!!</a></span>
+
+<h3 style="text-align:left; padding-left:200px;">Summary</h3>
+<p style="text-align:left;padding-left:200px;">{{movie.movie_summary}}</p>
+
+<span class="btn btn-success" style="float:right;">
+<a href='{% url "index"%}' style="padding-bottom:20px; color:white;"> Back to List </a>
+</span>
+
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

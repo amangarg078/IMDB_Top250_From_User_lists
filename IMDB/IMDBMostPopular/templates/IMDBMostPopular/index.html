@@ -1,0 +1,26 @@
+{% extends 'IMDBMostPopular/base.html'%}
+{% block content %}
+<div class="container page-header hpad">
+<div class="row">
+<div class="col-md-2">
+</div>
+<div class="col-md-8 body">
+
+<h1>   You are currently seeing the Top 250 Most Popular movies </h1>
+
+
+<ul class="posts ">
+	{% for movie in popular_movie_list %}
+		<li class="post post-content">
+		<div class="UpperTitle">
+		
+	<!--	<img src="{{movie.movie_image}}" class="img-thumbnail " height="80px" width="60px" style="padding-bottom:20px;">  -->	
+			#{{forloop.counter}}. <a href="{% url 'details' movie.id %}" > {{movie.movie_title}} </a>
+		</div>
+		</li>
+	{% endfor %}
+</ul>			
+</div>
+</div>
+</div>
+{% endblock %}

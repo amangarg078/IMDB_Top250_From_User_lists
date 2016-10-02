@@ -1,0 +1,86 @@
+body{
+background-color: #f9f9f9;
+}
+.body{
+background-color: #e7def4;
+text-align:center;
+
+}
+.poster{
+width:60px;
+height: 80px;
+
+}
+.UpperTitle
+{
+    text-align: center;
+    padding: 20px 0;
+   
+    font-weight:bold;
+    
+    position: relative;
+}
+.UpperTitle img { position: absolute; left: 15px; }
+
+.label-primary {
+  background-color: #FF5656;
+}
+
+.panel-default>.panel-heading {
+background-color:#B0F4A8;
+}
+.hpad{
+    padding-top: 30px;
+}
+.tpad{
+    padding-top: 10px;
+}
+
+
+div.post-tabs {
+    margin-top: 16px;
+}
+ul.posts {
+    list-style-type: none;
+    padding: 0px;
+    margin: 16px 0px 0px 0px;
+    border-top: 1px solid #e0e0e0;
+}
+div.post-tabs ul.posts {
+    margin: 0px;
+    border-top: none;
+}
+ul.posts li.post {
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+ul.posts li.post:hover {
+    background-color: #f0f0f0;
+}
+
+
+div.post-date {
+    float: right;
+}
+
+div.post-thumbnail {
+    position: absolute;
+}
+div.post-content {
+    margin-left: 48px;
+    min-height: 48px;
+}
+div.post-footer {
+    text-align: right;
+}
+
+.post-body h1 {
+    font-size: 140%;
+}
+.post-body h2 {
+    font-size: 130%;
+}
+.post-body h3 {
+    font-size: 120%;
+}
+
